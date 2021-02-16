@@ -7,9 +7,19 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar">
+      <ul>
+      <li><%= link_to 'Wikinous', articles_path%></li>
+      <li><%= link_to 'Add new article', new_article_path %></li>
+      </ul>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

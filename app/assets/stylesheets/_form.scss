@@ -1,0 +1,38 @@
+.new_article,
+.edit_article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 100%;
+  & label, 
+  & input,
+  & textarea {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  & textarea {
+    height: 20vh;
+  }
+  // &input:last-child {
+  //   color: $action;
+  // }
+}
+
+input[type="submit" i] {
+    color: $action;
+    appearance: none;
+    border-style: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: 2px solid $action;
+    border-radius: 5px;
+    background-color: $light;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 40%;
+    &:hover {
+      color: $light;
+      background-color: $action;
+    }
+}
